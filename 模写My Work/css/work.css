@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+}
+img{
+    max-width: 100%;
+}
+.wrapper{
+    max-width: 960px;
+    padding: 0 4%;
+    margin: 0 auto 130px auto;
+    box-sizing:border-box;
+}
+.header{
+    max-width:960px;
+    margin: 15vh auto 0px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    
+
+}
+.nav-box{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding:10px 0px;
+}
+.nav li{
+    margin-left: 20px;    
+}
+.nav-box li a{
+    color: black;
+    text-decoration: none;
+}
+.nav-box li:hover{
+opacity: 0.3;
+}
+.insta{
+    width: 20px;
+    
+}
+.main-img img{
+    height: 420px;
+    margin-top: 90px;
+}
+.sub-titile{
+    text-align: center;
+    margin: 60px;
+    font-weight: bold;
+    font-size: 23px;
+    
+}
+.box1{
+    padding-bottom: 40px;
+}
+.about-box li{
+    line-height: 25px;
+    font-size: 15px;
+}
+#about p{
+    margin: 20px auto;
+}
+.works-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.works-box li{    
+    width: 32%;
+    padding-bottom: 20px;
+}
+.news-box{
+    display: flex;
+    flex-wrap: wrap;
+    height: 30vh;
+    border-top: thin solid #c8c8c8;
+    
+    }
+    .news-box dt{
+        width: 20%;
+        height:3vh;
+        font-size: 15px;
+     
+        border-bottom:thin solid #c8c8c8;
+        padding: 2vh 0 2px 0;
+    }
+    .news-box dd{
+        width: 70%;
+        height:3vh;
+        font-size: small;
+        border-bottom:thin solid #c8c8c8;
+        padding:2vh 0 2px 0;
+    }
+    #contact dl{
+        display: flex;
+        flex-wrap: wrap;
+        }
+        #contact dt{
+           width: 20%;
+        }
+        #contact dd{
+           width: 80%;
+        }
+        #contact dd input,
+        #contact textarea{
+            margin: 0px 0px 8px 0px ;
+          border:2px solid #c8c8c8;   
+          width: 100%;
+          padding: 10px;
+            }
+            #contact dd input:focus,
+        #contact textarea:focus{
+            border: 2px solid #c8c8c8;
+        }
+            #contact textarea{
+               height: 80px;
+            }
+            .btn input{
+                border: 1px solid black;
+                width :180px;
+                padding:15px;
+                color:white;
+                background:black;
+                margin-top:30px;
+   
+            }
+            .btn{
+                text-align:center;
+            }
+            #contact  textarea, dd input:focus {
+                outline:none;
+              }
+              .btn input:hover{
+                  background: white;
+                  color: black;
+              }
+              .footer{
+                  width: 100%;
+                  background: black;
+                  color: white;
+                  padding: 20px 0px 0px 0px;
+                  text-align: center;
+                  height: 5px;
+                  font-size: small;
+              }

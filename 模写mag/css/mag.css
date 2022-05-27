@@ -1,0 +1,186 @@
+@charset "UTF-8";
+html{
+    font-size: 100%;
+}
+img{
+    max-width: 100%;   
+    display: block;
+}
+body{
+    font-family: "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+    font-size: 0.875rem;
+  color: #2a2a2a;
+}
+/* 共通部分 */
+.wrapper{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 5%;
+}
+.sub-title{
+    font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    opacity: 0.5;
+}
+.btn{
+    border: thin solid #2a2a2a;
+    padding: 15px 30px;
+    display: inline-block;
+    margin-top: 30px;
+    background: white;
+}
+
+/* ヘッダー */
+header {
+    height: 100vh;
+    background-image: url(../img/mainvisual.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin-bottom: 80px;
+    position: relative;
+  }
+
+  .main-img {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+/* メイン */
+
+
+#main{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.sub-img{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    
+}
+.sub-img a{
+    width: 49%;
+    position: relative;
+}
+.text-box{
+    max-width: 290px;
+    color: #fff;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px 0;
+    margin: 0 auto;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+}
+.img-text{
+    font-size: 1.25rem;
+    margin-bottom: 2px;
+}
+.fashion{
+    height:520px;
+    background-image: url(../img/fashion.jpg);
+    background-size:cover;
+    background-position:center top;
+    background-repeat:no-repeat;
+    text-align:center;
+    padding-top:60px;
+    margin-bottom:80px;    
+}
+/* かたろぐ */
+.catalog-box{
+    background: #f5f5f5;    
+    padding: 60px 0;
+   
+}
+
+.catalog-item{
+    display: flex;
+    
+    
+text-align: center;
+    justify-content: space-between;
+    
+}
+.catalog .sub-title{
+    margin-bottom: 40px;
+}
+.catalog{
+    width: 48%;
+   text-align: center;
+}
+.catalog img{
+    width: 100%;
+}
+.catalog p{
+    margin-bottom: 30px;
+    text-align: left;
+}
+.catalog p:last-child{
+    margin-bottom: 0;
+}
+footer{
+    background: #333;
+    
+    
+}
+.fotter{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 100px; */
+    font-size: 0.750rem;
+    line-height: 2;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.fotter img{
+    padding: 60px 0;
+}
+.title-box{
+    width: 33%;
+}
+.title-box li{
+list-style-position: inside;
+}
+.footer-title{
+padding-bottom: 10px;
+font-size: large;
+}
+.end{
+    color:black;
+    background:white;
+    text-align:center;
+    padding:30px 0;
+  }
+  @media (max-width:896px){
+    .sub-img{
+        
+        flex-direction: column;
+        
+        
+    }
+    .sub-img .a{
+        width: 100%;
+    }
+    .sub-img .a:first-child{
+        margin-bottom: 30px;
+    }
+    .catalog-item{
+        flex-direction: column;        
+    }
+    .catalog{
+        width: 100%;
+       
+    }
+    .catalog:first-child{
+        margin-bottom: 30px;
+    }
+  }

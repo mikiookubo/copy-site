@@ -1,0 +1,281 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+}
+body{
+    color: #333;
+  font-size: 1rem;
+  font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #333;
+   
+}
+li{
+    list-style-type: none;
+}
+
+img{
+    max-width: 100%;
+}
+/* 共通 */
+.wrapper{
+    max-width: 1200px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+.readmore{
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+.readmore a{
+   
+    margin-top: 10px;
+    position: relative;
+    padding-bottom: 1px;
+}
+.readmore a::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+  bottom: 0;
+  transition: all 200ms ease;
+}
+.readmore  a:hover::after{
+
+    transform: translateY(3px);
+    opacity: 0;
+
+}
+/* ヘッダー */
+.header{
+    width: 100%;
+  background-color: #fff;
+  position: fixed;
+  z-index: 10;
+}
+.logo{
+    padding-top: 20px;
+   
+}
+.nav{
+    background-color: #333;
+    /* height: 50px; */
+    text-align: center;
+    margin-top: 20px;
+}
+.nav ul{
+    display: flex;
+    
+}
+.nav li{
+    padding:10px 40px 10px 0px  ;
+}
+.nav a{
+    display: inline-block;
+    color: white;
+   
+}
+/* 上の画像 */
+.img-box{
+    padding-top: 180px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+   
+    
+}
+.img{
+    width: 32%;
+    
+   
+}
+.img h2{
+    font-size: 1rem;
+    margin: 10px 0px 15px;
+    
+}
+
+
+/* 記事 */
+
+
+#container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+main {
+    width: 65%;
+  }
+
+
+.item img{
+    width: 100%;
+}
+.item ul {
+    display: flex;
+    margin: 10px 0 10px;
+}
+.item li{
+    padding-right: 10px;
+}
+.item p{
+    padding: 20px 30px;    
+}
+
+/* サイド記事  1番目*/
+
+aside{
+    width: 33%;
+    margin: 0px;
+}
+.name{
+    padding: 20px;
+    text-align: center;
+}
+.text{
+    text-align: left;
+    font-size: 0.85rem;
+}
+.item h2{
+    margin-top: 30px;
+}
+/* .item h2:first-child{
+    margin-top: 0px;
+} */
+/* サイド記事  ２番目*/
+.name{
+    margin-top: 20px;
+}
+.name-img{
+   
+    margin-bottom: 20px;
+}
+.name img{
+    
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.title{
+    margin-bottom: 50px;
+}
+
+.title{
+    text-align: center;
+   font-weight: bold;
+   font-size: 1.25rem;
+}
+.ranking{
+    padding: 20px;
+}
+.sub{
+    font-size: 0.85rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.date{
+    padding: 20px;
+}
+.date li{
+    border-top: 1px solid #333;
+    padding: 20px ;
+    font-size: 0.85rem;
+    text-align: left;
+    
+    
+   
+}
+.date li:last-child{
+    border-bottom: #333 solid 1px;
+}
+/* フッター */
+footer{
+    font-size: 0.875rem;
+  background-color: #f7f7f7;
+}
+.about,.menu,.twitter{
+    width: 30%;
+    padding-top: 60px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.footer h3{
+    margin-bottom: 20px;
+}
+.about p{
+    margin-bottom: 20px;
+}
+.about ul .menu-a{
+    position: relative;
+    display: inline-block;
+    padding-left: 12px;
+    color: #333
+}
+.about ul .menu-a::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 0 6px 8px;
+    border-color: transparent transparent transparent #333;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -6px;
+}
+.about li{
+    padding-bottom: 10px;
+}
+.menu ul{
+    border-bottom: 1px solid #333;
+}
+.menu li{
+    border-top: #333 solid 1px;
+    padding: 15px;
+}
+.copy{
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 10px 0;
+    
+}
+@media(max-width: 767px){
+    .img-box{
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .img{
+        width: 100%;
+        margin-bottom: 20px;
+    }         
+    #container{
+        flex-direction: column;
+    }
+    main{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+    .footer{
+    flex-direction: column;        
+    }
+    .about,.menu,.twitter{
+        width: 100%;
+    }
+}

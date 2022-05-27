@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+html{
+    font-size:100% ;
+ 
+}
+/* 共通部分 */
+body{
+    color: #333;
+    font-size: 0.75rem;
+    font-family: 'Raleway', sans-serif;
+ 
+    
+}
+.wrapper{
+    max-width: 800px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+.img{
+    max-width: 100%;
+}
+
+
+
+/* ヘッダー */
+header{
+    max-width: 1000px;
+    margin: 0 auto 50px auto;
+    padding: 46px 0 26px 0;
+    border-bottom: thin solid #c3c3c3;
+}
+/* メイン */
+.title{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    width: 109px;
+    line-height: 1px;
+    margin: 0 auto 36px auto;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+}
+.item1,.item2{
+    list-style: none;
+    display: flex;
+  
+}
+.item li{
+    padding-right: 15px;
+}
+.flex{
+    display: flex;
+    justify-content:space-between;
+}
+.img{
+    max-width: 400px;
+    margin-right: 60px;
+    flex-shrink: 0;
+}
+
+.info{
+    max-width: 400px;
+    
+ 
+}
+
+
+.img img{
+    width: 100%;
+}
+.main-title{
+    font-size:17px;
+    border-top: thin solid #c3c3c3;
+    border-bottom: thin solid #c3c3c3;
+    padding: 20px 0;
+    margin: 0;
+}
+.info p{
+    margin: 29px auto;
+}
+.color,.size{
+    width: 20%;
+}
+.table1{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.combo{
+    width: 60%;
+}
+.table1 td,.table1 th{
+    text-align: center;
+    border-right: thin solid #c3c3c3;
+    padding: 10px;
+    font-weight: normal;
+}
+.table1 td{
+    border-top:thin solid #c3c3c3;
+}
+.table1 td:last-child,.table1 th:last-child{
+    border-right: none;
+}
+.table1 select{
+    border: thin solid #c3c3c3;
+    width: 100%;
+    padding: 0 10px;
+}
+.btn{
+    border: thin solid black;
+    background: #4B4B4B;
+    color: white;
+    padding:15px;
+    text-align:center;
+    margin:30px 0;
+    display: block;
+    }
+    .table2{
+        width: 100%;
+        margin-bottom: 50px;
+        text-align: center;
+        border-top: 1px solid #c3c3c3;
+        border-left: 1px solid #c3c3c3;
+    }
+    .size2{
+        width: 16%;
+    }
+    .chest,.weist,.height{
+        width: 28%;
+    }
+    .table2 th{
+        background: #ecebeb;;
+    }
+    .table2 th,.table2 td{
+      border-bottom: solid 1px #c3c3c3;
+      border-right: 1px solid #c3c3c3;
+      padding: 10px;
+      font-weight: normal;
+    }
+    footer{
+        padding: 10px 0;
+    }
+    .end{
+        font-size: 0.625rem;
+        text-align: center;
+        margin: 0;
+        
+    }
