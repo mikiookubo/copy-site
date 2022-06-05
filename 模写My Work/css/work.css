@@ -12,6 +12,9 @@ img{
     margin: 0 auto 130px auto;
     box-sizing:border-box;
 }
+li{
+    list-style: none;
+}
 .header{
     max-width:960px;
     margin: 15vh auto 0px;
@@ -45,7 +48,7 @@ opacity: 0.3;
     height: 420px;
     margin-top: 90px;
 }
-.sub-titile{
+.sub-title{
     text-align: center;
     margin: 60px;
     font-weight: bold;
@@ -59,7 +62,7 @@ opacity: 0.3;
     line-height: 25px;
     font-size: 15px;
 }
-#about p{
+.about p{
     margin: 20px auto;
 }
 .works-box{
@@ -74,21 +77,17 @@ opacity: 0.3;
 .news-box{
     display: flex;
     flex-wrap: wrap;
-    height: 30vh;
     border-top: thin solid #c8c8c8;
     
     }
     .news-box dt{
         width: 20%;
-        height:3vh;
         font-size: 15px;
-     
         border-bottom:thin solid #c8c8c8;
-        padding: 2vh 0 2px 0;
+        padding: 15px;
     }
     .news-box dd{
         width: 70%;
-        height:3vh;
         font-size: small;
         border-bottom:thin solid #c8c8c8;
         padding:2vh 0 2px 0;
@@ -106,7 +105,7 @@ opacity: 0.3;
         #contact dd input,
         #contact textarea{
             margin: 0px 0px 8px 0px ;
-          border:2px solid #c8c8c8;   
+          border:1px solid #c8c8c8;   
           width: 100%;
           padding: 10px;
             }
@@ -117,18 +116,20 @@ opacity: 0.3;
             #contact textarea{
                height: 80px;
             }
-            .btn input{
+
+            .btn-box{
+               text-align: center;
+            }
+
+            .btn{
                 border: 1px solid black;
                 width :180px;
                 padding:15px;
                 color:white;
                 background:black;
                 margin-top:30px;
-   
             }
-            .btn{
-                text-align:center;
-            }
+       
             #contact  textarea, dd input:focus {
                 outline:none;
               }
@@ -136,12 +137,11 @@ opacity: 0.3;
                   background: white;
                   color: black;
               }
-              .footer{
-                  width: 100%;
-                  background: black;
-                  color: white;
-                  padding: 20px 0px 0px 0px;
-                  text-align: center;
-                  height: 5px;
-                  font-size: small;
+              .footer {
+                width: 100%;
+                background: black;
+                color: white;
+                padding: 10px;
+                text-align: center;
+                font-size: x-small;
               }
